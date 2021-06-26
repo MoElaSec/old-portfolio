@@ -39,3 +39,14 @@ input,
 textarea {
     color: var(--secondaryText);
 }
+
+/* Sections Backgrounds */
+.s1 {
+    background-color: var(--mainColor);
+    border-bottom: var(--borderColor);
+}
+
+.s2 {
+    background-color: var(--secondaryColor);
+    border-bottom: var(--borderColor);
+}
