@@ -40,13 +40,50 @@ textarea {
     color: var(--secondaryText);
 }
 
-/* Sections Backgrounds */
+
+/* all links w/underline + color */
+a{
+	text-decoration: none;
+	color:#17a2b8;
+}
+/* no bullet points for lists */
+ul{
+	list-style: none;
+}
+
+/* pre-coded text-sizes */
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+
+
+/*-- Sections Backgrounds --*/
 .s1 {
     background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
 }
 
 .s2 {
     background-color: var(--secondaryColor);
     border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* responsiveness @media */
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 95%;
+    }
 }
