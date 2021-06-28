@@ -1,6 +1,6 @@
 // storing the theme in the localStorage
-// let theme = localStorage.getItem("theme");
-let theme = sessionStorage.getItem("theme");
+let theme = localStorage.getItem("theme");
+// let theme = sessionStorage.getItem("theme");
 
 if (theme == null) {
     setTheme("light");
@@ -36,6 +36,6 @@ function setTheme(mode) {
         document.getElementById("theme-style").href = "purple.css";
     }
 
-    // localStorage.setItem("theme", mode);
-    sessionStorage.setItem("theme", mode);
+    localStorage.setItem("theme", mode);
+    // sessionStorage.setItem("theme", mode);
 }
